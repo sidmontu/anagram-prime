@@ -23,15 +23,15 @@ e.g. `./anagram_checker hello olleh`
 
 ## PRELIMINARY RESULTS
 
-$> ./anagram_checker hello olleh
+$> `./anagram_checker hello olleh`
 
-$> [FREQ] 0.102308 microseconds/evaluation
+[FREQ] 0.102308 microseconds/evaluation
 
-$> [PRIME] 0.009318 microseconds/evaluation
+[PRIME] 0.009318 microseconds/evaluation
 
-$> [PRIME-ORD] 0.009024 microseconds/evaluation
+[PRIME-ORD] 0.009024 microseconds/evaluation
 
-$> hello and olleh are anagrams
+hello and olleh are anagrams
 
 ## TO-DO
 
