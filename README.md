@@ -1,6 +1,6 @@
 # ANAGRAM CHECKER
 
-Inspired from the Reddit thread: https://www.reddit.com/r/math/comments/6hb0xk/clever\_algorithm\_to\_determine\_whether\_or\_not\_two/
+Inspired from the Reddit thread: https://www.reddit.com/r/math/comments/6hb0xk/clever_algorithm_to_determine_whether_or_not_two/
 
 ## IDEA
 Proposed Algorithm to find if two input words are anagrams:
@@ -19,7 +19,7 @@ But the following optimization might help practical use-case:
 
 You need PAPI library installed for performance profiling. The Makefile is very hacky, so you might have to edit that too, depending on your unix environment. Tested on Ubuntu 16.04 with PAPI 5.5.1.
 
-Type `make`, then run `./anagram\_checker <word1> <word2>`
+Type `make`, then run `./anagram_checker <word1> <word2>`
 e.g. `./anagram_checker hello olleh`
 
 ## TO-DO
