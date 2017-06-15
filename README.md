@@ -11,7 +11,7 @@ Current best ways of doing the above, in order of popularity/performance:
 
 2) Sort letters in each word. The resultant strings of each word will be exact. [CURRENTLY NOT IMPLEMENTED]
 
-The proposed algorithm is arguably slower, and also susceptible to integer overflow. Will require 128-bit integer arithmetic at least to guarantee all words can be tested for.
+The proposed algorithm is arguably slower, and also susceptible to integer overflow. Will require 128-bit integer arithmetic at least to guarantee all words can be supported [Source](https://www.reddit.com/r/math/comments/6hb0xk/clever_algorithm_to_determine_whether_or_not_two/dix8409/).
 
 But the following optimization might help practical use-case: Map primes efficiently to each letter by frequency of occurrence in the english language.. example, 'e' is the most frequently found alphabet in text, so map 'e' to the smallest prime number, i.e. 'e' = 2.
 
