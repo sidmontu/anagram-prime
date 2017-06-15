@@ -3,21 +3,17 @@
 Inspired from the Reddit thread: https://www.reddit.com/r/math/comments/6hb0xk/clever_algorithm_to_determine_whether_or_not_two/
 
 ## IDEA
-Proposed Algorithm to find if two input words are anagrams:
-
-	- Map each of the 26 english characters to a unique prime number. Then calculate the product of the string. Two strings are anagrams if and only if their products are the same.
+Proposed Algorithm to find if two input words are anagrams: Map each of the 26 english characters to a unique prime number. Then calculate the product of the string. Two strings are anagrams if and only if their products are the same.
 
 Current best ways of doing the above, in order of popularity/performance:
 
-	1) Count frequency of each letter in each word, and then simply compare. If the strings are anagrams, the frequency bins will be identical.
+1) Count frequency of each letter in each word, and then simply compare. If the strings are anagrams, the frequency bins will be identical.
 
-	2) Sort letters in each word. The resultant strings of each word will be exact. [CURRENTLY NOT IMPLEMENTED]
+2) Sort letters in each word. The resultant strings of each word will be exact. [CURRENTLY NOT IMPLEMENTED]
 
 The proposed algorithm is arguably slower, and also susceptible to integer overflow. Will require 128-bit integer arithmetic at least to guarantee all words can be tested for.
 
-But the following optimization might help practical use-case:
-
-	- Map primes efficiently to each letter by frequency of occurrence in the english language.. example, 'e' is the most frequently found alphabet in text, so map 'e' to the smallest prime number, i.e. 'e' = 2.
+But the following optimization might help practical use-case: Map primes efficiently to each letter by frequency of occurrence in the english language.. example, 'e' is the most frequently found alphabet in text, so map 'e' to the smallest prime number, i.e. 'e' = 2.
 
 ## RUNNING/COMPILING
 
