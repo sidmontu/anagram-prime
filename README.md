@@ -8,8 +8,7 @@ Proposed Algorithm to find if two input words are anagrams: Map each of the 26 e
 Current best ways of doing the above, in order of popularity/performance:
 
 1) Count frequency of each letter in each word, and then simply compare. If the strings are anagrams, the frequency bins will be identical.
-
-2) Sort letters in each word. The resultant strings of each word will be exact. [CURRENTLY NOT IMPLEMENTED]
+2) Sort letters in each word. The resultant strings of each word will be exact. [NOT Implemented in this project]
 
 The proposed algorithm is arguably slower, and also susceptible to integer overflow. Will require 128-bit integer arithmetic at least to guarantee all words can be supported [Source](https://www.reddit.com/r/math/comments/6hb0xk/clever_algorithm_to_determine_whether_or_not_two/dix8409/).
 
@@ -24,4 +23,5 @@ e.g. `./anagram_checker hello olleh`
 
 ## TO-DO
 
-Some sort of dictionary run to profile performance with increasing/decreasing word lengths?
+1) Some sort of dictionary run to profile performance with increasing/decreasing word lengths?
+2) Sorting algorithm described above.
