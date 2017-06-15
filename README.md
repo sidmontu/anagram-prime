@@ -21,6 +21,18 @@ You need PAPI library installed for performance profiling. The Makefile is very 
 Type `make`, then run `./anagram_checker <word1> <word2>`
 e.g. `./anagram_checker hello olleh`
 
+## PRELIMINARY RESULTS
+
+$> ./anagram_checker hello olleh
+
+$> [FREQ] 0.102308 microseconds/evaluation
+
+$> [PRIME] 0.009318 microseconds/evaluation
+
+$> [PRIME-ORD] 0.009024 microseconds/evaluation
+
+$> hello and olleh are anagrams
+
 ## TO-DO
 
 1) Some sort of dictionary run to profile performance with increasing/decreasing word lengths?
