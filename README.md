@@ -33,6 +33,18 @@ $> `./anagram_checker hello olleh`
 
 hello and olleh are anagrams
 
+-------
+
+$> `./anagram_checker hydroxydeoxycorticosterones hydroxydesoxycorticosterone`
+
+[FREQ] 0.121323 microseconds/evaluation
+
+[PRIME] 0.048357 microseconds/evaluation
+
+[PRIME-ORD] 0.048355 microseconds/evaluation
+
+hydroxydeoxycorticosterones and hydroxydesoxycorticosterone are anagrams
+
 ## TO-DO
 
 1) Some sort of dictionary run to profile performance with increasing/decreasing word lengths?
