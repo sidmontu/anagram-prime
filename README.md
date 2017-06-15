@@ -8,6 +8,7 @@ Proposed Algorithm to find if two input words are anagrams:
 
 Current best ways of doing the above, in order of popularity/performance:
 	1) Count frequency of each letter in each word, and then simply compare. If the strings are anagrams, the frequency bins will be identical.
+
 	2) Sort letters in each word. The resultant strings of each word will be exact. [CURRENTLY NOT IMPLEMENTED]
 
 The proposed algorithm is arguably slower, and also susceptible to integer overflow. Will require 128-bit integer arithmetic at least to guarantee all words can be tested for.
