@@ -13,7 +13,7 @@ using namespace std;
 typedef unsigned __int128 uint128_t;
 
 int eval_prime(unsigned *map, char *word1, char *word2);
-int eval_freq(char *word1, char *word2);
+int eval_freq(int *freq1, int *freq2, char *word1, char *word2);
 void display_usage() {
 	printf("Usage: ./anagram_checker <word1> <word2>\n");
 }
@@ -44,13 +44,15 @@ int main(int argc, char **argv) {
 
 	int isAnagram0, isAnagram1 ,isAnagram2;
 	long_long t0,t1;
+	int *freq1 = (int *)calloc(26,sizeof(int));
+	int *freq2 = (int *)calloc(26,sizeof(int));
 
 	///////////////////// Start timing different implementations ///////////////////////////
 
 	// evaluate using the frequency-bin method
 	t0 = get_time();
 	for (int i=0;i<REPEAT;i++) {
-		isAnagram0 = eval_freq(word1,word2);
+		isAnagram0 = eval_freq(freq1,freq2,word1,word2);
 	}
 	t1 = get_time();
 	printf("[FREQ] %f microseconds/evaluation\n",(t1-t0)/((float)REPEAT));
@@ -98,10 +100,14 @@ int eval_prime(unsigned *map, char *word1, char *word2) {
 	return (product1 == product2);
 }
 
-int eval_freq(char *word1, char *word2) {
+int eval_freq(int *freq1, int *freq2, char *word1, char *word2) {
 
-	int *freq1 = (int *)calloc(26,sizeof(int));
-	int *freq2 = (int *)calloc(26,sizeof(int));
+	// reset bin counters
+	for (int i=0;i<26;i++) {
+		freq1[i] = 0;
+		freq2[i] = 0;
+	}
+
 	int length1 = 0, length2 = 0;
 	for (int i=0;word1[i]!='\0';i++) {
 		freq1[(int)word1[i]-97]++;

@@ -25,11 +25,11 @@ e.g. `./anagram_checker hello olleh`
 
 $> `./anagram_checker hello olleh`
 
-[FREQ] 0.102308 microseconds/evaluation
+[FREQ] 0.035254 microseconds/evaluation
 
-[PRIME] 0.009318 microseconds/evaluation
+[PRIME] 0.008961 microseconds/evaluation
 
-[PRIME-ORD] 0.009024 microseconds/evaluation
+[PRIME-ORD] 0.009217 microseconds/evaluation
 
 hello and olleh are anagrams
 
@@ -37,11 +37,11 @@ hello and olleh are anagrams
 
 $> `./anagram_checker hydroxydeoxycorticosterones hydroxydesoxycorticosterone`
 
-[FREQ] 0.121323 microseconds/evaluation
+[FREQ] 0.062869 microseconds/evaluation
 
-[PRIME] 0.048357 microseconds/evaluation
+[PRIME] 0.048360 microseconds/evaluation
 
-[PRIME-ORD] 0.048355 microseconds/evaluation
+[PRIME-ORD] 0.048361 microseconds/evaluation
 
 hydroxydeoxycorticosterones and hydroxydesoxycorticosterone are anagrams
 
